@@ -21,16 +21,24 @@ from haruka.modules.translations.strings import tld, tld_help
 from haruka.modules.connection import connected
 
 PM_START = """Hello {}, my name is {}!
-You know how hard it is sometimes to manage group so here is the solution for you
+You know how hard it is sometimes to manage group so here is the solution for you.
+
 I'm group manager bot and Anti-spam for RR Players🃏
+
 Activate Anti-spam protection in my PM by this command : 
 /antispam on 
 
 Click /help or Help button below to find out more about how to use me to my full potential.
- Add me to a group by clicking [here](http://t.me/MissNidhi_bot?startgroup=true).
- If you need any help then come [here](https://t.me/nidhibots).
- All Updates are Made [here](https://t.me/nidhibotu).
 
+ Add me to a group by clicking [here](http://t.me/MissNidhi_bot?startgroup=true). 
+ 
+ If you need any help then come [here](https://t.me/nidhibots). 🇮🇳
+ 
+ All Updates are Made [here](https://t.me/nidhibotu). 🇮🇳
+ 
+ Bot is made by [ME](https://t.me/iam_newbie)
+
+ 🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳🇮🇳
 """
 
 
@@ -149,6 +157,8 @@ def send_start(bot, update):
     text = PM_START
 
     keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
+    keyboard = [[InlineKeyboardButton(text="Owner Here", callback_data="https://t.me/iam_newbie")]]
+    keyboard = [[InlineKeyboardButton(text="Updates Here", callback_data="https://t.me/nidhibotu")]]
     keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="cntrl_panel_M"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
